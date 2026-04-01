@@ -1,16 +1,52 @@
-# inofruit
+## 🍎 Fruit App (Flutter)
 
-A new Flutter project.
+A modern and user-friendly fruit shopping app built with Flutter. This application provides a smooth and responsive experience for browsing, selecting, and learning about different types of fruits.
 
-## Getting Started
+### 🚀 Features
 
-This project is a starting point for a Flutter application.
+* 🛒 Browse a variety of fruits with images and details
+* 🔍 Search and filter fruits بسهولة
+* ❤️ Add fruits to favorites
+* 📱 Responsive UI for Android & iOS
+* ⚡ Fast performance using Flutter framework
 
-A few resources to get you started if this is your first Flutter project:
+### 🛠️ Built With
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* Flutter
+* Dart
+* Material UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 📸 Screenshots
+<img width="398" height="851" alt="image" src="https://github.com/user-attachments/assets/ee94c3f6-c181-463d-bc1f-04c7d60df2e2" />
+
+
+
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/your-username/fruit-app.git
+cd fruit-app
+flutter pub get
+flutter run
+```
+
+### 📂 Project Structure
+
+* `lib/` – Main source code
+* `assets/` – Images and icons
+* `widgets/` – Reusable UI components
+
+### 🎯 Future Improvements
+
+* 🛍️ Add cart and checkout functionality
+* 🌐 API integration for real-time data
+* 🔐 User authentication
+
+### 🤝 Contributing
+
+Contributions are welcome! Feel free to fork this repo and submit a pull request.
+
+### 📄 License
+
+This project is open-source and available under the MIT License.
