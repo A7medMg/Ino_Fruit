@@ -25,7 +25,7 @@ A modern and user-friendly fruit shopping app built with Flutter. This applicati
 ### 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/fruit-app.git
+git clone https://github.com/A7medMg/Ino_Fruit.git
 cd fruit-app
 flutter pub get
 flutter run
