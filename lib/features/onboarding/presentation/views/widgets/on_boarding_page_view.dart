@@ -14,9 +14,10 @@ class OnBoardingPageView extends StatelessWidget {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Fruit"),
-              Text("HUB "),
-              Text("مرحبًا بك في"),
+             Text("مرحبًا بك في"),
+           
+            Text(" HUB "),
+             Text("Fruit"),
 
             ],
           ),
