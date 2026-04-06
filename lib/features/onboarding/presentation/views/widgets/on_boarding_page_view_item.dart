@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PageViewItem extends StatelessWidget {
+  final bool isVisable;
   final String subTitle;
   final Widget title;
   final String image;
@@ -12,7 +13,7 @@ class PageViewItem extends StatelessWidget {
     required this.subTitle,
     required this.title,
     required this.image,
-    required this.backGroundImage,
+    required this.backGroundImage, required this.isVisable,
   });
 
   @override
@@ -32,9 +33,12 @@ class PageViewItem extends StatelessWidget {
                   left: 0,
                   right: 0,
                   child: SvgPicture.asset(image,height: 250)),
-              Padding(
-                padding: const EdgeInsets.all(16),
-                child: const Text("تخط"),
+              Visibility(
+                visible: isVisable,
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: const Text("تخط"),
+                ),
               ),
             ],
           ),
