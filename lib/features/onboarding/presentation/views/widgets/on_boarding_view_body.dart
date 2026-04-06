@@ -1,5 +1,8 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:inofruit/core/helper_funcations/naviagtion_func.dart';
+import 'package:inofruit/core/helper_funcations/routes_name.dart';
+import 'package:inofruit/core/services/shared_prefeneces.dart';
 import 'package:inofruit/core/theming/app_colors.dart';
 
 import '../../../../../constant.dart';
@@ -37,7 +40,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(child: OnBoardingPageView(currentPage: currentPage, pageController: pageController,)),
+        Expanded(child: OnBoardingPageView( pageController: pageController,)),
         DotsIndicator(dotsCount: 2,
           decorator: DotsDecorator(
             activeColor:AppColors.primary,
@@ -55,7 +58,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
             child: AbbCustomButton(
-              onPressed: (){},
+              onPressed: (){
+                Pref.setBool(onBoardingIseenKey, true);
+                context.pushReplacementNamed(RoutesName.loginScreen);
+              },
               text: "ابدأ الان",
             ),
           ),
