@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:inofruit/core/services/shared_prefeneces.dart';
 import 'package:inofruit/generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/helper_funcations/app_rotes.dart';
 import 'core/helper_funcations/routes_name.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Pref.init();
   runApp(const MyApp());
 }
 
@@ -25,6 +28,7 @@ class MyApp extends StatelessWidget {
             locale: const Locale('ar'),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: "Cairo",
         scaffoldBackgroundColor: Colors.white
       ),
       onGenerateRoute: AppRotes().onGenerateRoute,
