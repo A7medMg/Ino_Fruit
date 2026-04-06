@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:inofruit/core/helper_funcations/routes_name.dart';
+import 'package:inofruit/features/auth/presentation/views/login_screen.dart';
 
 import '../../features/onboarding/presentation/views/onboarding_screen.dart';
 import '../../features/splash/presentation/view/splash_screen.dart';
@@ -15,6 +16,10 @@ class AppRotes {
       case RoutesName.onBoarding:
         return MaterialPageRoute(
           builder: (context) => const OnboardingScreen(),
+        );
+      case RoutesName.loginScreen:
+        return MaterialPageRoute(
+          builder: (context) => const LoginScreen(),
         );
       default:
         return null;

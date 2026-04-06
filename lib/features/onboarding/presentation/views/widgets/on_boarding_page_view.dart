@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:inofruit/core/theming/app_colors.dart';
+import 'package:inofruit/core/theming/app_text_styles.dart';
 import 'package:inofruit/core/utils/images.dart';
 
 import 'on_boarding_page_view_item.dart';
 
 class OnBoardingPageView extends StatelessWidget {
-  final int currentPage;
+  
   final PageController pageController ;
-  const OnBoardingPageView({super.key, required this.currentPage, required this.pageController});
+  const OnBoardingPageView({super.key,  required this.pageController});
 
   @override
   Widget build(BuildContext context) {
@@ -17,19 +19,19 @@ class OnBoardingPageView extends StatelessWidget {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("مرحبًا بك في"),
-               Text(" HUB "),
-              Text("Fruit"),
+              Text("مرحبًا بك في",style: TextStyles.bold23,),
+               Text(" HUB",style: TextStyles.bold23.copyWith(color: AppColors.secondaryColor)),
+              Text("Fruit",style: TextStyles.bold23.copyWith(color: AppColors.primary)),
           
               
             ],
           ),
           image: Assets.assetsImagesOnboardingImage1,
-          backGroundImage:  Assets.assetsImagesOnboardingBackground1, isVisable: currentPage==0,),
+          backGroundImage:  Assets.assetsImagesOnboardingBackground1, isVisable: true),
         PageViewItem(subTitle: "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية",
-          title: Text("ابحث وتسوق"),
+          title: Text("ابحث وتسوق",style: TextStyles.bold23,),
           image: Assets.assetsImagesOnboardingImage2,
-          backGroundImage:  Assets.assetsImagesOnboardingBackground2, isVisable: currentPage==0,),
+          backGroundImage:  Assets.assetsImagesOnboardingBackground2, isVisable: false),
 
       ],
     );

@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:inofruit/constant.dart';
+import 'package:inofruit/core/services/shared_prefeneces.dart';
 import 'package:inofruit/core/utils/images.dart';
 
 import '../../../../../core/helper_funcations/naviagtion_func.dart';
@@ -42,9 +44,13 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     );
   }
   void executeThenNavigate(){
+    bool isFirstTime = Pref.getBool(onBoardingIseenKey) ;
     Future.delayed(const Duration(seconds: 3), () {
-      context.pushReplacementNamed(RoutesName.onBoarding);
-
+      if (isFirstTime) {
+        context.pushReplacementNamed(RoutesName.loginScreen);
+      } else {
+        context.pushReplacementNamed(RoutesName.onBoarding);
+      }
     });
 
   }
