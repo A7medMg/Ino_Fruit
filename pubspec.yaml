@@ -97,15 +97,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
-flutter_assets_generator:
-  # المسار اللي فيه الصور فعلياً
+flutter_assets:
   assets_path: assets/images/
-  # المسار اللي هيطلع فيه الملف (تأكد إن المجلدات موجودة)
-  output_dir: lib/core/utils/
-  # اسم الملف اللي هيتكريه (بدون .dart في بعض النسخ)
-  output_filename: images
-  # اسم الكلاس اللي هتستخدمه في الكود
-  class_name: Assets
-  auto_detection: true
+  output_path: lib/core/utils/
+  filename: images.dart
+
 flutter_intl:
   enabled: true
