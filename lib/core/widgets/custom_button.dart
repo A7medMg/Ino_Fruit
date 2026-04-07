@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inofruit/core/theming/app_text_styles.dart';
 
 import '../theming/app_colors.dart';
 
@@ -20,11 +21,7 @@ class AbbCustomButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
             )),
           ),
-          onPressed: onPressed, child: Text(text,style: TextStyle(
-        color: Colors.white,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      ),)),
+          onPressed: onPressed, child: Text(text,style: TextStyles.bold16.copyWith(color: Colors.white),)),
     );
   }
 }
