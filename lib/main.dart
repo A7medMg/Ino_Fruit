@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inofruit/core/services/shared_prefeneces.dart';
+import 'package:inofruit/core/theming/app_colors.dart';
 import 'package:inofruit/generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/helper_funcations/app_rotes.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
             locale: const Locale('ar'),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed( seedColor:  AppColors.primary,),
         fontFamily: "Cairo",
         scaffoldBackgroundColor: Colors.white
       ),

@@ -26,12 +26,12 @@ class OnBoardingPageView extends StatelessWidget {
               
             ],
           ),
-          image: Assets.assetsImagesOnboardingImage1,
-          backGroundImage:  Assets.assetsImagesOnboardingBackground1, isVisable: true),
+          image: Assets.assetsImagesPageViewItem1Image,
+          backGroundImage:  Assets.assetsImagesPageViewItem1BackgroundImage, isVisable: true),
         PageViewItem(subTitle: "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية",
           title: Text("ابحث وتسوق",style: TextStyles.bold23,),
-          image: Assets.assetsImagesOnboardingImage2,
-          backGroundImage:  Assets.assetsImagesOnboardingBackground2, isVisable: false),
+          image: Assets.assetsImagesPageViewItem2Image,
+          backGroundImage:  Assets.assetsImagesPageViewItem2BackgroundImage, isVisable: false),
 
       ],
     );
